@@ -28,3 +28,27 @@ echo "/home contiene un subdirectorio por usuario con sus archivos personales."
 ls -l /home
 echo "$SEP"
 echo ""
+
+# Bloque 4: /bin contiene los programas esenciales
+echo "=== /bin ==="
+echo "/bin contiene programas esenciales disponibles para todo usuario."
+ls -l /bin | head -n 20
+echo "$SEP"
+echo ""
+
+# Bloque 5: /tmp contiene archivos temporales
+echo "=== /tmp ==="
+echo "/tmp contiene archivos temporales que se vacian al reiniciar."
+ls -lh /tmp | head -n 20
+echo "$SEP"
+echo ""
+
+# Bloque 6: /proc es un sistema virtual que fabrica el kernel
+echo "=== /proc ==="
+echo "/proc es un sistema virtual: el kernel genera su contenido al leerlo."
+ls -l /proc | head -n 20
+echo "$SEP"
+echo ""
+
+# Mensaje final que marca el cierre del reporte
+echo "Exploracion completada."
