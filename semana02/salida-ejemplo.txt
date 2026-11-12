@@ -1,0 +1,93 @@
+=== /etc ===
+/etc guarda archivos de configuracion del sistema en texto plano.
+total 1280
+-rw-r--r--  1 root   root    3444 jul  5  2023 adduser.conf
+-rw-r--r--  1 root   root      16 nov  5 19:14 adjtime
+drwxr-xr-x  3 root   root    4096 ene  8  2026 alsa
+drwxr-xr-x  2 root   root    4096 nov 10 18:15 alternatives
+-rw-r--r--  1 root   root     335 abr  8  2024 anacrontab
+-rw-r--r--  1 root   root     433 abr  8  2024 apg.conf
+drwxr-xr-x  5 root   root    4096 ene  8  2026 apm
+drwxr-xr-x  3 root   root    4096 nov 10 18:19 apparmor
+drwxr-xr-x  9 root   root   12288 nov 10 18:21 apparmor.d
+drwxr-xr-x  8 root   root    4096 nov  5 19:22 apt
+drwxr-xr-x  3 root   root    4096 nov 10 18:21 avahi
+-rw-r--r--  1 root   root    2319 mar 31  2024 bash.bashrc
+-rw-r--r--  1 root   root      45 ene 24  2020 bash_completion
+drwxr-xr-x  2 root   root    4096 nov 10 18:30 bash_completion.d
+-rw-r--r--  1 root   root     367 ago  2  2022 bindresvport.blacklist
+drwxr-xr-x  2 root   root    4096 abr 19  2024 binfmt.d
+drwxr-xr-x  2 root   root    4096 nov 10 18:20 bluetooth
+-rw-r-----  1 root   root      33 ene  8  2026 brlapi.key
+drwxr-xr-x  7 root   root    4096 ene  8  2026 brltty
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+total 36K
+drwxr-xr-x  2 root root   4,0K nov 12 09:41 backups
+drwxr-xr-x 23 root root   4,0K nov  5 20:00 cache
+drwxr-xr-x 71 root root   4,0K nov 10 18:30 lib
+drwxrwsr-x  2 root staff  4,0K abr 22  2024 local
+lrwxrwxrwx  1 root root      9 nov  5 19:13 lock -> /run/lock
+drwxrwxr-x 13 root syslog 4,0K nov 12 09:41 log
+drwxrwsr-x  2 root mail   4,0K ene  8  2026 mail
+drwxr-xr-x  2 root root   4,0K ene  8  2026 opt
+lrwxrwxrwx  1 root root      4 nov  5 19:13 run -> /run
+drwxr-xr-x  7 root root   4,0K ene  8  2026 spool
+drwxrwxrwt 11 root root   4,0K nov 12 10:01 tmp
+--------------------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario con sus archivos personales.
+total 4
+drwxr-x--- 34 marc marc 4096 nov 12 09:54 marc
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene programas esenciales disponibles para todo usuario.
+lrwxrwxrwx 1 root root 7 nov  5 19:08 /bin -> usr/bin
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se vacian al reiniciar.
+total 44K
+-rw------- 1 marc marc    0 nov 12 09:41 config-err-kjWoQK
+drwxrwxrwx 2 marc marc 4,0K nov 12 09:42 mintUpdate
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-colord.service-5B7Yvm
+drwx------ 3 root root 4,0K nov 12 10:01 systemd-private-e00e60bdc86e413e884579839a1bf744-fwupd.service-dwbaUN
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-ModemManager.service-LDFh7N
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-polkit.service-CdLERH
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-power-profiles-daemon.service-uMk4Vw
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-switcheroo-control.service-k2NZpM
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-systemd-logind.service-4DhLNa
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-systemd-resolved.service-vqEzTb
+drwx------ 3 root root 4,0K nov 12 09:41 systemd-private-e00e60bdc86e413e884579839a1bf744-upower.service-VUS9uH
+drwxrwxrwt 2 root root 4,0K nov 12 09:41 VMwareDnD
+--------------------------------------------------
+
+=== /proc ===
+/proc es un sistema virtual: el kernel genera su contenido al leerlo.
+total 0
+dr-xr-xr-x  9 root            root                          0 nov 12 09:38 1
+dr-xr-xr-x  9 root            root                          0 nov 12 09:41 100
+dr-xr-xr-x  9 rtkit           rtkit                         0 nov 12 09:41 1027
+dr-xr-xr-x  9 root            root                          0 nov 12 09:41 1098
+dr-xr-xr-x  9 root            root                          0 nov 12 09:41 1107
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1127
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1128
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1138
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1139
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1140
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1146
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1147
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1148
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1164
+dr-xr-xr-x  9 root            root                          0 nov 12 09:41 12
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1245
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1247
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1260
+dr-xr-xr-x  9 marc            marc                          0 nov 12 09:41 1261
+--------------------------------------------------
+
+Exploracion completada.
