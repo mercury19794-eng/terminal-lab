@@ -18,3 +18,9 @@ echo "=== Conteo por codigo de estado ==="
 # El estado es la columna 9 en el formato Apache usado aqui
 # sort -n: el estado menos frecuente aparece primero
 awk '{print $9}' "$LOG" | sort | uniq -c | sort -n
+
+echo ""
+echo "=== Lineas con error 500 ==="
+# Los espacios alrededor de 500 evitan coincidir con tamanos o rutas
+# || ejecuta lo de la derecha solo si grep no encuentra nada
+grep " 500 " "$LOG" || echo "(ninguna)"
