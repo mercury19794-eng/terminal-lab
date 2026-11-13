@@ -28,3 +28,12 @@ mv -f trabajo/*.md organized/documentos/
 mv -f trabajo/*.jpg organized/imagenes/
 mv -f trabajo/*.log organized/registros/
 
+
+# Resumen por categoria
+echo "Resumen por categoria:"
+echo -n "  scripts: "; ls -1 organized/scripts | wc -l
+echo -n "  documentos: "; ls -1 organized/documentos | wc -l
+echo -n "  imagenes: "; ls -1 organized/imagenes | wc -l
+echo -n "  registros: "; ls -1 organized/registros | wc -l
+echo -n "  otros: "; ls -1 organized/otros | wc -l
+echo "Clasificacion completada."
