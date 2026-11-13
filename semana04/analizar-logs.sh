@@ -24,3 +24,13 @@ echo "=== Lineas con error 500 ==="
 # Los espacios alrededor de 500 evitan coincidir con tamanos o rutas
 # || ejecuta lo de la derecha solo si grep no encuentra nada
 grep " 500 " "$LOG" || echo "(ninguna)"
+
+echo ""
+echo "=== Hora pico (hora con mas peticiones) ==="
+# cut -d'[' -f2: se queda con lo que viene despues del corchete (fecha y hora)
+# cut -d':' -f2: toma el segundo campo, que es la hora
+# sort | uniq -c | sort -nr | head: agrupa, cuenta, ordena y deja la primera
+cut -d'[' -f2 "$LOG" | cut -d':' -f2 | sort | uniq -c | sort -nr | head -n 1
+
+echo ""
+echo "Analisis completado."
