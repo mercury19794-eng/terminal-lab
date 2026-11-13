@@ -12,3 +12,9 @@ echo "=== Top 5 IP con mas peticiones ==="
 # awk: imprime la columna 1 (la IP) | sort: junta las iguales
 # uniq -c: cuenta cada grupo | sort -nr: de mayor a menor | head: las 5 primeras
 awk '{print $1}' "$LOG" | sort | uniq -c | sort -nr | head -n 5
+
+echo ""
+echo "=== Conteo por codigo de estado ==="
+# El estado es la columna 9 en el formato Apache usado aqui
+# sort -n: el estado menos frecuente aparece primero
+awk '{print $9}' "$LOG" | sort | uniq -c | sort -n
