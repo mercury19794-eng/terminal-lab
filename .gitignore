@@ -17,3 +17,4 @@ respaldo-*.tar.gz
 # Credenciales
 .env
 
+*.tar.gz
