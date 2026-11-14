@@ -1,0 +1,23 @@
+=== Sistema ===
+Linux marc-VirtualBox 7.0.0-42-generic #42~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Oct 19 14:43:01 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Linux Mint"
+VERSION="22.3 (Zena)"
+ID=linuxmint
+ID_LIKE="ubuntu debian"
+PRETTY_NAME="Linux Mint 22.3"
+up 6 hours, 10 minutes
+               total       usado       libre  compartido   búf/caché  disponible
+Mem:           3,8Gi       989Mi       1,3Gi        15Mi       1,8Gi       2,9Gi
+=== Usuario ===
+marc
+uid=1000(marc) gid=1000(marc) grupos=1000(marc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),105(lpadmin),125(sambashare)
+marc adm cdrom sudo dip plugdev users lpadmin sambashare
+=== Disco ===
+S.ficheros     Tamaño Usados  Disp Uso% Montado en
+tmpfs            392M   1,2M  390M   1% /run
+/dev/sda3         24G    12G   12G  52% /
+tmpfs            2,0G      0  2,0G   0% /dev/shm
+tmpfs            5,0M   8,0K  5,0M   1% /run/lock
+/dev/sda2        512M   6,2M  506M   2% /boot/efi
+tmpfs            392M   192K  391M   1% /run/user/1000
+12K	.
