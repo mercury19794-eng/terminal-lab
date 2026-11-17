@@ -1,0 +1,43 @@
+=== Monitor de procesos ===
+Usuario: marc
+Fecha: lun 16 nov 2026 21:14:31 -04
+
+=== Procesos del usuario ordenados por %CPU ===
+    PID STAT %CPU %MEM COMMAND
+   1535 Sl    4.6  6.3 cinnamon
+   1931 Ssl   0.6  1.1 gnome-terminal-
+   1233 Sl    0.4  0.0 VBoxClient
+   1915 Sl    0.3  1.4 mintreport-tray
+   1284 Sl    0.2  0.8 ibus-extension-
+   1606 Sl    0.1  1.7 nemo-desktop
+   1264 Ssl   0.1  0.2 ibus-daemon
+   1386 Sl    0.0  0.9 csd-background
+   1225 Sl    0.0  0.0 VBoxClient
+   1609 Sl    0.0  1.5 evolution-alarm
+   1850 Sl    0.0  2.3 mintUpdate
+   1594 Sl    0.0  1.3 blueman-applet
+   1107 Ss    0.0  0.1 dbus-daemon
+   1283 Sl    0.0  1.1 ibus-ui-gtk3
+   1522 Sl    0.0  1.0 cinnamon-launch
+   1400 Sl    0.0  0.0 VBoxClient
+   1130 Ssl   0.0  0.3 cinnamon-sessio
+   1608 Sl    0.0  0.9 cinnamon-killer
+   1525 Sl    0.0  0.2 ibus-engine-sim
+
+=== Proceso de mayor consumo ===
+   1535 cinnamon         4.6
+
+=== Conteo por estado ===
+      1 R
+     80 S
+
+=== Proceso de prueba ===
+Proceso de prueba lanzado con PID=3844
+    PID STAT CMD
+   3844 S+   sleep 60
+[1]+  3844 Ejecutando              sleep 60 &
+
+=== Terminacion en dos etapas ===
+Termino correctamente con SIGTERM
+
+Monitoreo completado.
