@@ -57,3 +57,21 @@ Get-ResumenPorCategoria | Sort-Object Categoria |
 
 Write-Output "=== 4. Categoria A con Valor mayor que 50 ==="
 Get-DosCondiciones | Format-Table -AutoSize | Out-String | Write-Output
+
+function Get-CategoriasUnicas {
+    $datos | Select-Object -ExpandProperty Categoria -Unique | Sort-Object
+}
+
+function Get-Totales {
+    $datos | Measure-Object Valor -Sum -Average -Maximum -Minimum |
+        Select-Object Count, Sum, Average, Maximum, Minimum
+}
+
+Write-Output "=== 5. Categorias distintas, ordenadas ==="
+# Sin Format-Table: sobre cadenas mostraria la columna Length, no el valor
+Get-CategoriasUnicas | Out-String | Write-Output
+
+Write-Output "=== 6. Totales del conjunto ==="
+Get-Totales | Format-Table -AutoSize | Out-String | Write-Output
+
+Write-Output "Consultas completadas."
