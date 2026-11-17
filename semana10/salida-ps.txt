@@ -1,0 +1,131 @@
+Exploracion del sistema - PowerShell
+
+=== /etc ===
+/etc guarda la configuracion del sistema en texto plano.
+
+Name              Length LastWriteTime
+----              ------ -------------
+alsa                     8/1/2026 2:32:58 p. m.
+alternatives             14/11/2026 11:28:21 a. m.
+apm                      8/1/2026 2:32:58 p. m.
+apparmor                 10/11/2026 6:19:52 p. m.
+apparmor.d               10/11/2026 6:21:08 p. m.
+apt                      5/11/2026 7:22:01 p. m.
+avahi                    10/11/2026 6:21:04 p. m.
+bash_completion.d        10/11/2026 6:30:30 p. m.
+binfmt.d                 19/4/2024 10:24:36 a. m.
+bluetooth                10/11/2026 6:20:20 p. m.
+
+
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+
+Name    Length LastWriteTime
+----    ------ -------------
+backups        15/11/2026 10:49:58 a. m.
+cache          5/11/2026 8:00:42 p. m.
+lib            12/11/2026 7:42:42 p. m.
+local          22/4/2024 9:08:03 a. m.
+lock           5/11/2026 7:13:37 p. m.
+log            16/11/2026 8:51:34 p. m.
+mail           8/1/2026 2:32:58 p. m.
+opt            8/1/2026 2:32:58 p. m.
+run            5/11/2026 7:13:37 p. m.
+spool          8/1/2026 2:32:58 p. m.
+
+
+--------------------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario.
+
+Name Length LastWriteTime
+---- ------ -------------
+marc        16/11/2026 10:00:00 p. m.
+
+
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene los programas esenciales del sistema.
+
+Name            Length LastWriteTime
+----            ------ -------------
+X11                    5/11/2026 7:08:48 p. m.
+[               55744  25/8/2026 11:09:03 a. m.
+7z              38     11/4/2024 2:31:30 a. m.
+7za             39     11/4/2024 2:31:30 a. m.
+7zr             39     11/4/2024 2:31:30 a. m.
+aa-enabled      18744  18/9/2026 1:52:55 p. m.
+aa-exec         18744  18/9/2026 1:52:55 p. m.
+aa-features-abi 18736  18/9/2026 1:52:55 p. m.
+aconnect        22912  7/4/2024 3:09:55 a. m.
+acpidbg         1622   23/10/2026 8:10:26 a. m.
+
+
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se borran al reiniciar.
+
+Name
+----                                                                            
+hsperfdata_marc                                                                 
+mintUpdate                                                                      
+systemd-private-662c7de6732e44ec83c826b4956a92b6-colord.service-ieOlSC          
+systemd-private-662c7de6732e44ec83c826b4956a92b6-fwupd.service-t8ARKv           
+systemd-private-662c7de6732e44ec83c826b4956a92b6-ModemManager.service-8cPsXz    
+systemd-private-662c7de6732e44ec83c826b4956a92b6-polkit.service-YkExCS          
+systemd-private-662c7de6732e44ec83c826b4956a92b6-power-profiles-daemon.service-…
+systemd-private-662c7de6732e44ec83c826b4956a92b6-switcheroo-control.service-gEW…
+systemd-private-662c7de6732e44ec83c826b4956a92b6-systemd-logind.service-U31WJR  
+systemd-private-662c7de6732e44ec83c826b4956a92b6-systemd-resolved.service-ynMMcU
+
+
+--------------------------------------------------
+
+=== /proc ===
+/proc es virtual: el kernel genera su contenido al leerlo.
+
+Name Length LastWriteTime
+---- ------ -------------
+1           16/11/2026 8:51:25 p. m.
+10          16/11/2026 8:51:28 p. m.
+100         16/11/2026 8:51:28 p. m.
+1063        16/11/2026 8:51:37 p. m.
+1072        16/11/2026 8:51:38 p. m.
+1090        16/11/2026 8:52:00 p. m.
+1091        16/11/2026 8:52:00 p. m.
+1101        16/11/2026 8:52:00 p. m.
+1102        16/11/2026 8:52:00 p. m.
+1104        16/11/2026 8:52:00 p. m.
+
+
+--------------------------------------------------
+
+=== Descubrimiento ===
+Cmdlets con el sustantivo Item:
+[31;1mGet-Command: [0m/home/marc/terminal-lab/semana10/explorar-sistema.ps1:46
+[36;1mLine |[0m
+[36;1m[36;1m  46 | [0m [36;1mGet-Command -Noun Item -CommandType Cmdlet[0m |
+[36;1m     | [31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[36;1m[31;1m[31;1m[36;1m     | [31;1mParameter set cannot be resolved using the specified named parameters.[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mOne or more parameters issued cannot be used together or an insufficient[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mnumber of parameters were provided.[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m[31;1m[0m
+Sintesis de la ayuda de Get-ChildItem:
+
+Name     : Get-ChildItem
+Synopsis : 
+           Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+           Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+
+
+Cantidad de elementos en /etc:
+256
+
+Exploracion completada.
