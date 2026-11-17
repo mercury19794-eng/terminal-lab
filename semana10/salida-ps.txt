@@ -107,14 +107,20 @@ Name Length LastWriteTime
 
 === Descubrimiento ===
 Cmdlets con el sustantivo Item:
-[31;1mGet-Command: [0m/home/marc/terminal-lab/semana10/explorar-sistema.ps1:46
-[36;1mLine |[0m
-[36;1m[36;1m  46 | [0m [36;1mGet-Command -Noun Item -CommandType Cmdlet[0m |
-[36;1m     | [31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[36;1m[31;1m[31;1m[36;1m     | [31;1mParameter set cannot be resolved using the specified named parameters.[0m
-[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mOne or more parameters issued cannot be used together or an insufficient[0m
-[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mnumber of parameters were provided.[0m
-[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m[31;1m[0m
+
+Name        Source
+----        ------
+Clear-Item  Microsoft.PowerShell.Management
+Copy-Item   Microsoft.PowerShell.Management
+Get-Item    Microsoft.PowerShell.Management
+Invoke-Item Microsoft.PowerShell.Management
+Move-Item   Microsoft.PowerShell.Management
+New-Item    Microsoft.PowerShell.Management
+Remove-Item Microsoft.PowerShell.Management
+Rename-Item Microsoft.PowerShell.Management
+Set-Item    Microsoft.PowerShell.Management
+
+
 Sintesis de la ayuda de Get-ChildItem:
 
 Name     : Get-ChildItem

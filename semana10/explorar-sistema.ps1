@@ -43,7 +43,7 @@ Show-Seccion -Path "/proc" -Desc "/proc es virtual: el kernel genera su contenid
 Write-Output "=== Descubrimiento ==="
 
 Write-Output "Cmdlets con el sustantivo Item:"
-Get-Command -Noun Item -CommandType Cmdlet |
+Get-Command -Noun Item | Where-Object CommandType -eq 'Cmdlet' |
     Select-Object Name, Source | Format-Table -AutoSize | Out-String | Write-Output
 
 Write-Output "Sintesis de la ayuda de Get-ChildItem:"
