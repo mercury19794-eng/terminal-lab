@@ -1,0 +1,61 @@
+=== Consultas sobre ./datos.csv ===
+Filas leidas: 10
+
+=== 1. Filas con Valor mayor que 100 ===
+
+Nombre  Categoria Valor
+------  --------- -----
+Alpha   A           120
+Gamma   A           200
+Epsilon B           150
+Theta   B           110
+Kappa   C           180
+
+
+=== 2. Proyeccion con columna calculada ===
+
+Nombre  Valor Doble
+------  ----- -----
+Alpha     120   240
+Beta       45    90
+Gamma     200   400
+Delta      30    60
+Epsilon   150   300
+Zeta       60   120
+Eta        90   180
+Theta     110   220
+Iota       40    80
+Kappa     180   360
+
+
+=== 3. Resumen por categoria ===
+
+Categoria Count   Total Promedio
+--------- -----   ----- --------
+A             4 420,000  105,000
+B             3 305,000  101,700
+C             3 300,000  100,000
+
+
+=== 4. Categoria A con Valor mayor que 50 ===
+
+Id Nombre Categoria Valor
+-- ------ --------- -----
+1  Alpha  A           120
+3  Gamma  A           200
+6  Zeta   A            60
+
+
+=== 5. Categorias distintas, ordenadas ===
+A
+B
+C
+
+=== 6. Totales del conjunto ===
+
+Count      Sum Average Maximum Minimum
+-----      --- ------- ------- -------
+   10 1025,000 102,500 200,000  30,000
+
+
+Consultas completadas.
