@@ -59,7 +59,8 @@ Get-ChildItem $Mezcla -File | Group-Object Extension | ForEach-Object {
 if ($PSCmdlet.ShouldProcess("resumen.csv", "Exportar resumen")) {
     $resumen = Get-ChildItem $Dest -Directory | ForEach-Object {
         $archivos = @(Get-ChildItem $_.FullName -File)
-        $suma = ($archivos | Measure-Object Length -Sum).Sum
+        $suma = 0
+        if ($archivos.Count -gt 0) { $suma = ($archivos | Measure-Object Length -Sum).Sum }
         [PSCustomObject]@{
             Categoria = $_.Name
             Cantidad  = $archivos.Count
